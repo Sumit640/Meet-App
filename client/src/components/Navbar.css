@@ -1,0 +1,46 @@
+.navbar{
+    width: 100vw;
+    height: 85px;
+    background-color: #874BAC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_heading{
+    margin: 0px 20px;
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+}
+.navbar_options{
+    margin: 0px 20px;
+}
+.navbar_options > img {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+}
+.thumbnail_options{
+    width: 400px;
+    height: 126px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+.profile {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.profile img{
+    width: 57px;
+    border-radius: 50%;
+}
+.profile p {
+    display: inline-block;
+    margin : auto;
+}
+.logout_option {
+    display: flex;
+    justify-content: center;
+}

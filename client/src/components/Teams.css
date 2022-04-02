@@ -1,0 +1,27 @@
+.teams_page{
+    background-color: #F5F5F5;
+    margin: 0px;
+}
+.teams{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.add_team{
+    width: 250px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 15px 15px 15px auto;
+    font-size: 20px;
+    
+}
+.add_team > p{
+    position: relative;
+    float: right;
+    margin: 5px 10px;
+}
+.add_icon{
+    margin: 7px 0px 7px 15px;
+    height: 20px;
+}
