@@ -1,14 +1,26 @@
 import React from "react";
-import Card from "./components/Card";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./components/Login";
+import Register from "./components/Register";
 import Teams from "./components/Teams";
 
 const App = () => {
     return (
-        <div>
-            <Navbar />
-            <Teams />
-        </div>
+        <Router>
+            <div>
+                <Switch>
+                    <Route path="/login" exact>
+                        <Login />
+                    </Route>
+                    <Route path="/register" exact>
+                        <Register />
+                    </Route>
+                    <Route path="/" exact>
+                        <Teams />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 };
 

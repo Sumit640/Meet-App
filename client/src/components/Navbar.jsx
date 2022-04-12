@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import "./Navbar.css";
-const Navbar = () => {
+const Navbar = ({ name }) => {
     const [anchorEl, setAnchorEl] = useState(null);
 
     const handleClick = (event) => {
@@ -44,7 +44,7 @@ const Navbar = () => {
                             src="https://lh3.googleusercontent.com/ogw/ADea4I5pDo_hBiPZa-adz4bWgxTgDV-JotesxrW829jt=s32-c-mo"
                             alt="thumbnail"
                         />
-                        <p>User Name</p>
+                        <p>{name}</p>
                     </div>
                     <div className="logout_option">logout</div>
                 </div>
